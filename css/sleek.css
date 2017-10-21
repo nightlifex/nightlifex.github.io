@@ -37,9 +37,15 @@ video {
 
 }
 
+#rp_title {
+   text-align: center;
+   padding: 0px;
+   font-size: 30px;
+}
+
 #title img {
 	text-align: center;
-	margin-top: 18px;
+	margin-top: 20px;
 }
 
 #gamemode, #map {
@@ -79,9 +85,7 @@ video {
 }
 
 #subtitle {
-	margin-left: 32%;
-	letter-spacing: 1px;
-	opacity: 0;
+
 }
 
 #music {
