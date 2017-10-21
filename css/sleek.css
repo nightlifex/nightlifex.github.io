@@ -85,7 +85,9 @@ video {
 }
 
 #subtitle {
-
+	margin-left: 32%;
+	letter-spacing: 1px;
+	opacity: 0;
 }
 
 #music {
