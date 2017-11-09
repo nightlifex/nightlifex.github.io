@@ -17,7 +17,7 @@ var l_serverName = "NIGHTLIFE";
 
 /*Use a video for the background?
 Otherwise it will just use images*/
-var l_bgVideo = true;
+var l_bgVideo = false;
 
 /*Video background
 Avaiable options:
@@ -50,7 +50,7 @@ var l_background = "backgrounds/videos/star.webm";
 Place one or more images
 Multiple images will automatically shuffle between them*/
 var l_bgImages = [
-
+   "backgrounds/images/41st_elite_corps.png"
 ];
 
 /*Random background images order?*/
